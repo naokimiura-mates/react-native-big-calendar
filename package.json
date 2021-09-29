@@ -17,7 +17,7 @@
     "start-rndemo-android": "yarn sync-rndemo && cd rndemo && yarn android",
     "test": "jest",
     "format": "prettier --write {src,stories}/**.{ts,tsx}",
-    "lint": "eslint --ext ts,tsx src stories",
+    "lint": "eslint --ext ts,tsx src stories build",
     "lint:fix": "yarn lint --fix",
     "watch": "rollup -cw",
     "prepublish": "npm run build",
