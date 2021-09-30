@@ -145,7 +145,7 @@ function _CalendarBodyForMonthView<T>({
                         index > maxVisibleEventCount ? null : index === maxVisibleEventCount ? (
                           <Text
                             key={index}
-                            style={{ fontSize: 11, marginTop: 2, fontWeight: 'bold' }}
+                            style={{ fontSize: 11, marginTop: 2, fontWeight: 'bold', color: theme.palette.gray['800']}}
                           >
                             {events.length - maxVisibleEventCount} More
                           </Text>

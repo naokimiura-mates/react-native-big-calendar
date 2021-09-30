@@ -775,7 +775,7 @@ function _CalendarBodyForMonthView(_a) {
                 return date.isBetween(dayjs__default['default'](start).startOf('day'), dayjs__default['default'](end).endOf('day'), null, '[)');
             })
                 .reduce(function (elements, event, index, events) { return __spreadArray(__spreadArray([], elements, true), [
-                index > maxVisibleEventCount ? null : index === maxVisibleEventCount ? (React__namespace.createElement(reactNative.Text, { key: index, style: { fontSize: 11, marginTop: 2, fontWeight: 'bold' } },
+                index > maxVisibleEventCount ? null : index === maxVisibleEventCount ? (React__namespace.createElement(reactNative.Text, { key: index, style: { fontSize: 11, marginTop: 2, fontWeight: 'bold', color: theme.palette.gray['800'] } },
                     events.length - maxVisibleEventCount,
                     " More")) : (React__namespace.createElement(CalendarEventForMonthView, { key: index, event: event, eventCellStyle: eventCellStyle, onPressEvent: onPressEvent, renderEvent: renderEvent, date: date, dayOfTheWeek: ii, calendarWidth: calendarWidth, isRTL: theme.isRTL })),
             ]); }, []))); }))); })));
